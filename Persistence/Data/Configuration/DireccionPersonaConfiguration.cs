@@ -8,7 +8,7 @@ using Persistence.Entities;
 
 namespace Persistence.Data.Configuration
 {
-    public class DireccionPersona : IEntityTypeConfiguration<Direccionpersona>
+    public class DireccionPersonaConfiguration : IEntityTypeConfiguration<Direccionpersona>
     {
         public void Configure(EntityTypeBuilder<Direccionpersona> builder)
         {
