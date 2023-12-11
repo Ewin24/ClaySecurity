@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Persistence.Entities;
 
@@ -18,9 +19,9 @@ public partial class Contrato : BaseEntity
     public int PersonaIdEmpleado { get; set; }
 
     public virtual Estado EstadoIdestadoNavigation { get; set; } = null!;
-
+    [NotMapped]
     public virtual Persona PersonaIdClienteNavigation { get; set; } = null!;
-
+    [NotMapped]
     public virtual Persona PersonaIdEmpleadoNavigation { get; set; } = null!;
 
     public virtual ICollection<Programacion> Programacions { get; set; } = new List<Programacion>();

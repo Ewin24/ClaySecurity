@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Persistence.Entities;
 
-public partial class Categoriapersona: BaseEntity
+public partial class Categoriapersona : BaseEntity
 {
     // public int IdcategoriaPersona { get; set; }
 
